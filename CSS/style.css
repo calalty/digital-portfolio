@@ -12,7 +12,12 @@ selector {
 }
 */
 
+/* Font URL's */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap');
+
+/* APPLIES TO EVERYTHING */
 * {
+    font-family: 'Baloo Paaji 2', cursive;
     background-color: #F4F1DE;
     margin: 0;
     padding: 0;
@@ -23,7 +28,7 @@ selector {
      */
 }
 
-
+/* Home / About / Projects */
 .navbar {
     background-color: #C3C3C3;
     /* key             value */
@@ -34,6 +39,7 @@ selector {
     /* 30px = top bottom.... 20px left right */
 }
 
+/* applies to unordered list */
 .navbar ul li { /* targetting .navbar class with ul li to be modified */
     background-color: #C3C3C3;
     color: #F4F1DE;
@@ -41,6 +47,7 @@ selector {
     display: inline-block; 
 }
 
+/* applies to text within list */
 .navbar li a { /* selector */
     background-color: #C3C3C3;
     color: #F4F1DE;
@@ -48,6 +55,7 @@ selector {
     padding: 15px 5px; /* Top and Bottom and Left to Right */
 }
 
+/* applies to h1 in .maincontent class */
 .maincontent h1 {
     color: #949396;
     align-items: middle;
@@ -57,6 +65,7 @@ selector {
     /* 30px = top bottom.... 20px left right */
 }
 
+/* applies to h2 in .maincontent class */
 .maincontent h2 {
     color: #949396;
     align-items: middle;
@@ -66,6 +75,7 @@ selector {
     /* 30px = top bottom.... 20px left right */
 }
 
+/* applies to p in .maincontent class */
 .maincontent p {
     color: #949396;
     align-items: middle;
@@ -75,6 +85,7 @@ selector {
     /* 30px = top bottom.... 20px left right */
 }
 
+/* applies to h3 in .fave class */
 .fave h3 {
     color:#949396;
     align-items: middle;
@@ -84,13 +95,34 @@ selector {
     /* 30px = top bottom.... 20px left right */
 }
 
-.fave ul {
+/* applies to ul li in .fave class */
+.fave ul li {
     color: #949396;
     align-items: middle;
     display: flex;
     justify-content: space-evenly;
     padding: 30px 20px;
     /* 30px = top bottom.... 20px left right */
+}
+
+.threecolumns {
+    color: #949396;
+    /* text-align moves the text inside the element. */
+    float: right; /* float moves the element itself */
+    width: 31.33%;
+    padding: 10px;
+}
+
+.columns:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    .threecolumns {
+        width: 100%;
+}
 }
 
 .box {
@@ -104,6 +136,7 @@ selector {
 .footer {
     color: #949396;
 }
+
 
 
 /* 
