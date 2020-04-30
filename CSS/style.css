@@ -133,6 +133,15 @@ selector {
     padding: 50px 25px 30px 25px; /* top, right, bottom, left */
 }
 
+.columns p{
+    font-size: small;
+}
+
+.columns h2 {
+    font-size: medium;
+    border-spacing: 10em;
+}
+
 .footer {
     color: #949396;
 }
